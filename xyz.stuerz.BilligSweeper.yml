@@ -17,8 +17,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.2-rc2.tar.gz
-        sha256: fd4028cbf9b8fa9304ce14551be770e510a3eedfc2cd6fc31f1d4a6134cf1e1b
+        url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.2.tar.gz
+        sha256: 5a3bfa1eedd0b645aec4a875369d0f18ef4b5a8b2e76abff38e5c30e4386f173
       - type: git
         url: https://github.com/cktan/tomlc99
         dest: tomlc99
