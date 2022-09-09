@@ -8,6 +8,7 @@ finish-args:
     - --socket=fallback-x11
     - --socket=x11
     - --device=dri
+    - --device=all
     - --share=ipc
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
 
@@ -17,8 +18,8 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.3-rc1.tar.gz
-        sha256: f15aa57a52843ae8ac555a11dad3c5e7e06bfcf06f2762a2548338ce47f4b7b9
+        url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.3.tar.gz
+        sha256: 666231f17bdcf051b0e82539ab38b144cd9073c6284454fb0443022d9fe0cd8e
       - type: git
         url: https://github.com/cktan/tomlc99
         dest: tomlc99
