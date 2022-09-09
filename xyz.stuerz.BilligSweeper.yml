@@ -19,7 +19,7 @@ modules:
     sources:
       - type: archive
         url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.3.tar.gz
-        sha256: 666231f17bdcf051b0e82539ab38b144cd9073c6284454fb0443022d9fe0cd8e
+        sha256: 94b6ac8d2ae4a5745728aed0bb0702bb624e9f6072f4252f84f334dadb8cdf57
       - type: git
         url: https://github.com/cktan/tomlc99
         dest: tomlc99
