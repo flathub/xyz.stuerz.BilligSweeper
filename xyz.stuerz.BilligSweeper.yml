@@ -23,3 +23,4 @@ modules:
       - type: git
         url: https://github.com/cktan/tomlc99
         dest: tomlc99
+        commit: 894902820a3ea2f1ec470cd7fe338bde54045cf5
