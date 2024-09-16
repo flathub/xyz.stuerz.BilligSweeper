@@ -6,9 +6,8 @@ command: billig-sweeper
 finish-args:
     - --socket=wayland
     - --socket=fallback-x11
-    - --socket=x11
     - --device=dri
-    - --device=all
+    - --device=input
     - --share=ipc
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
 
