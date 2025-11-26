@@ -1,18 +1,23 @@
 app-id: xyz.stuerz.BilligSweeper
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: billig-sweeper
 finish-args:
     - --socket=wayland
     - --socket=fallback-x11
-    - --socket=x11
     - --device=dri
+    # We actually only need device=input for touchscreens,
+    # but the flathub linter rejects it:
+    # Error: 'finish-args-has-dev-input' error found in linter manifest check.
+    # Details: This permissions is not backwards compatible with a supported Flatpak release 1.14.x
+    # and requires an exception
     - --device=all
     - --share=ipc
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
 
 modules:
+  - shared-modules/SDL2/SDL2_image.json
   - name: billig-sweeper
     buildsystem: meson
     builddir: true
