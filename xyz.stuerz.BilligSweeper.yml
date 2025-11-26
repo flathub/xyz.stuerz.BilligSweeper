@@ -1,6 +1,6 @@
 app-id: xyz.stuerz.BilligSweeper
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: billig-sweeper
 finish-args:
@@ -17,6 +17,7 @@ finish-args:
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
 
 modules:
+  - shared-modules/SDL2/SDL2_image.json
   - name: billig-sweeper
     buildsystem: meson
     builddir: true
