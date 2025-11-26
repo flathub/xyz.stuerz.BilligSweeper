@@ -6,8 +6,12 @@ command: billig-sweeper
 finish-args:
     - --socket=wayland
     - --socket=fallback-x11
-    - --socket=x11
     - --device=dri
+    # We actually only need device=input for touchscreens,
+    # but the flathub linter rejects it:
+    # Error: 'finish-args-has-dev-input' error found in linter manifest check.
+    # Details: This permissions is not backwards compatible with a supported Flatpak release 1.14.x
+    # and requires an exception
     - --device=all
     - --share=ipc
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
