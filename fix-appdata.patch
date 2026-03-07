@@ -1,0 +1,103 @@
+From 35d03a27016a59609ca0389e825cf412b0baf34a Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Mon, 23 Feb 2026 22:31:22 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ data/xyz.stuerz.BilligSweeper.metainfo.xml | 56 ++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 28 insertions(+), 28 deletions(-)
+
+diff --git a/data/xyz.stuerz.BilligSweeper.metainfo.xml b/data/xyz.stuerz.BilligSweeper.metainfo.xml
+index 045c09b..6a29b51 100644
+--- a/data/xyz.stuerz.BilligSweeper.metainfo.xml
++++ b/data/xyz.stuerz.BilligSweeper.metainfo.xml
+@@ -1,58 +1,58 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <!-- Copyright 2022 Benjamin Stürz -->
+ <component type="desktop-application">
++  <metadata_license>CC0-1.0</metadata_license>
++  <project_license>GPL-3.0-or-later</project_license>
+   <id>xyz.stuerz.BilligSweeper</id>
+-
+   <name>BilligSweeper</name>
+   <summary>A cheap clone of Minesweeper</summary>
+-  <url type="homepage">https://github.com/riscygeek/billig-sweeper</url>
+-
+-  <metadata_license>CC0-1.0</metadata_license>
+-  <project_license>GPL-3.0-or-later</project_license>
+-
++  <url type="homepage">https://github.com/realchonk/billig-sweeper</url>
++  <url type="bugtracker">https://github.com/realchonk/billig-sweeper/issues</url>
++  <url type="vcs-browser">https://github.com/realchonk/billig-sweeper</url>
++  <launchable type="desktop-id">xyz.stuerz.BilligSweeper.desktop</launchable>
++  <developer id="io.github.realchonk">
++    <name>Benjamin Stürz</name>
++  </developer>
++  <provides>
++    <binary>billig-sweeper</binary>
++  </provides>
++  <content_rating type="oars-1.1" />
+   <description>
+     <p>
+       Billig Sweeper is a cheap clone of Minesweeper with even cheaper graphics. Left click to select a tile, right click to mark a bomb.
+     </p>
+     <p>
+       Hint: If you expect 4K, 8K or even 16K super duper high fidelity graphics, this one is not for you!
+     </p>
+   </description>
+-
+-  <launchable type="desktop-id">xyz.stuerz.BilligSweeper.desktop</launchable>
+   <screenshots>
+     <screenshot type="default">
+       <caption>Typical game play</caption>
+-      <image>https://github.com/riscygeek/billig-sweeper/blob/master/data/Screenshots/bsw1.png?raw=true</image>
++      <image>https://github.com/realchonk/billig-sweeper/blob/master/data/Screenshots/bsw1.png?raw=true</image>
+     </screenshot>
+     <screenshot>
+       <caption>Sometimes you can win</caption>
+-      <image>https://github.com/riscygeek/billig-sweeper/blob/master/data/Screenshots/bsw2.png?raw=true</image>
++      <image>https://github.com/realchonk/billig-sweeper/blob/master/data/Screenshots/bsw2.png?raw=true</image>
+     </screenshot>
+     <screenshot>
+       <caption>It even has an interacive menu if you press ESC or M</caption>
+-      <image>https://github.com/riscygeek/billig-sweeper/blob/master/data/Screenshots/bsw3.png?raw=true</image>
++      <image>https://github.com/realchonk/billig-sweeper/blob/master/data/Screenshots/bsw3.png?raw=true</image>
+     </screenshot>
+   </screenshots>
+-
+-  <provides>
+-    <binary>billig-sweeper</binary>
+-  </provides>
+-
+-  <content_rating type="oars-1.0" />
+-
+   <releases>
+     <release version="1.3" date="2022-09-09">
+-      <p>Version 1.3</p>
+-      <p>ChangeLog:</p>
+-      <p>- Added initial support for touch screens (clicking, panning, zooming) including haptic feedback</p>
+-      <p>- Added help dialog (F1)</p>
+-      <p>- Added second "marked" state</p>
+-      <p>- Added death vibration</p>
+-      <p>- Fixed panning out of bounds</p>
+-      <p>- Presets are now configurable in the config</p>
+-      <p>- Lots of input-related refactoring</p>
+-      <p>- Panning is now with middle mouse button</p>
++      <description>
++        <p>Version 1.3</p>
++        <p>ChangeLog:</p>
++        <p>- Added initial support for touch screens (clicking, panning, zooming) including haptic feedback</p>
++        <p>- Added help dialog (F1)</p>
++        <p>- Added second "marked" state</p>
++        <p>- Added death vibration</p>
++        <p>- Fixed panning out of bounds</p>
++        <p>- Presets are now configurable in the config</p>
++        <p>- Lots of input-related refactoring</p>
++        <p>- Panning is now with middle mouse button</p>
++      </description>
+     </release>
+     <release version="1.2.1" date="2022-09-03">
+       <description>
+--
+libgit2 1.7.2
+

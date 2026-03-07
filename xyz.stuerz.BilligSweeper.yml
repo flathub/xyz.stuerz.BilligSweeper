@@ -1,18 +1,18 @@
 app-id: xyz.stuerz.BilligSweeper
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: billig-sweeper
 finish-args:
-    - --socket=wayland
     - --socket=fallback-x11
-    - --socket=x11
+    - --socket=wayland
     - --device=dri
     - --device=all
     - --share=ipc
     - --env=XDG_CONFIG_DIR=.var/app/xyz.stuerz.BilligSweeper/config
 
 modules:
+  - shared-modules/SDL2/SDL2_image.json
   - name: billig-sweeper
     buildsystem: meson
     builddir: true
@@ -20,6 +20,8 @@ modules:
       - type: archive
         url: https://github.com/riscygeek/billig-sweeper/archive/refs/tags/v1.3.tar.gz
         sha256: 94b6ac8d2ae4a5745728aed0bb0702bb624e9f6072f4252f84f334dadb8cdf57
+      - type: patch
+        path: fix-appdata.patch
       - type: git
         url: https://github.com/cktan/tomlc99
         dest: tomlc99
